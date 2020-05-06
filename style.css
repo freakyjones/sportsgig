@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald|Roboto&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Oswald', sans-serif;
+    background-color: #772828;
+}
+header{
+ 
+    position: relative;
+}
+.container{
+    width: 100%;
+    max-width: 80em;
+    margin:0 auto;
+    
+}
+.timeline{
+    display: none;
+}
+.main_header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    align-items: center;
+    width: 100%;
+    height: 8vh;
+    background: #06021E;
+}
+
+.btn_section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index:9999;
+    position: absolute;
+    background-color: #06021E;
+    width: 100%;
+  display: none;
+    transition: all 0.5s ease-in-out;
+}
+.visibility{
+    display: flex;
+    transition: all 0.5s ease-in-out
+}
+.btn_section button{
+    border-style: none;
+    outline-style: none;
+    width: 7em;
+    height: 2.5em;
+    background-color: #483838;
+    font-size: 1.2rem;
+    color: #fff;
+    letter-spacing: 0.1em;
+}
+.sign_up{
+    margin: 1em 0;
+}
+#body{
+    padding: 1em;
+}
+.text_section{
+    text-align: center;
+}
+.arrow_img{
+    width: 100%;
+   max-width: 15em;
+    margin: 0 auto;
+}
+.arrow_img img{
+    width: 100%;
+}
+.heading_txt{
+    margin-top: 1.5em;
+  
+}
+.heading_txt h1{
+    font-size: 2.8rem;
+    width: 100%;
+    max-width: 8em;
+    margin: 0 auto;
+    color: #fff;
+    line-height: 1.1;
+}
+.heading_txt p{
+  margin:0.5em auto;
+  max-width: 8em;
+  
+ color: #C19B9B;
+}
+.icon_section{
+    margin-top: 2em;
+    text-align: center;
+}
+
+.icon_section img{
+    width: 6em;
+    margin:1em 1em;
+}
+#call_to_action{
+    padding:1em;
+    text-align: center;
+}
+.buy_nowbtn{
+    width: 100%;
+    height: 100%;
+   max-width: 18rem;
+    height: 3.5rem;
+    background-color: #1C0303;
+    border-style: none;
+    outline-style: none;
+    color: #fff;
+    border-radius: 0.5em;
+    font-size: 2rem;
+}
+@media(min-width:700px){
+    *{
+        margin: 0;
+        padding:0;
+    }
+    body{
+        background-color: #9A92CA;
+        text-align: left;
+    }
+   .row{
+       display: flex;
+      align-items: center;
+   }
+   header{
+       margin-top: 1em;
+   }
+   
+    .main_header{
+        display: none;
+    }
+    .timeline{
+        display: block;
+    }
+    .timeline img{
+        width: 100%;
+        max-width: 20em;
+    }
+    .btn_section{
+        display: block;
+        background-color:transparent;
+        position: unset;
+        margin-top: 0;
+        text-align: end;
+    }
+    .btn_section button{
+      margin-top: 0;
+      margin:0 auto;
+      border-radius: 0.4em;
+    }
+    .btn_section .sign_in{
+        margin-right: 2em;
+    }
+    #body{
+        margin:0;
+        padding:0;
+        
+        text-align: left
+    }
+    .color{
+        margin-top: 2em;
+        background-color: #772828;
+        padding: 1em;
+        min-height: 70vh;
+    }
+    .text_section{
+        width: 50%;
+        justify-self: flex-start;
+        
+    }
+    span{
+        color:rgb(45, 250, 89);
+    }
+    .arrow_img{
+        text-align: left;
+        margin: 0;
+    }
+    .text_section h1{
+        margin:0;
+        text-align: left;
+       max-width: 15em;
+       font-size: 5rem;
+    }
+    .text_section p{
+        margin:1em 0;
+
+        text-align: left;
+        
+        font-size: 1.3rem;
+    }
+    .icon_section{
+        width: 50%;
+        text-align: right;
+    }
+    #call_to_action{
+      
+        text-align: left;
+      
+    }
+    .btn_background{
+        background-color: #F5C7C7;
+        padding: 1em 1em 1em 1em;
+    }
+}

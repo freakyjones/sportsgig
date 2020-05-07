@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Oswald', sans-serif;
+}
+header{
+    padding: 1em;
+    background-color: #7779A7;
+ 
+}
+.row{
+    display: flex;
+}
+.style{
+    align-items: center;
+}
+.logo{
+ width: 50%;
+}
+.logo img{
+    width: 12em;
+}
+.hambarger{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 5em;
+}
+.nav{
+    text-align: center;
+    display: none;
+    transition: all 0.5s ease-in-out;
+}
+.nav ul{
+    list-style-type: none;
+}
+.nav li{
+    margin-top: 1em;
+}
+.nav a{
+ text-decoration: none;
+ color: #fff;
+}
+.visibility{
+ display:block;
+}
+#search{
+    padding: 1em;
+    background-color: #110000;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+}
+.search_box{
+    width: 15rem;
+    height: 3rem;
+}
+.search_box:placeholder-shown{
+    font-size: 1.2rem;
+    opacity: 0.7;
+}
+#products{
+    padding: 1em;
+    background-color: #1F274F;
+    text-align: center;
+}
+.products_heading h1{
+    font-size: 2.5rem;
+    width: 100%;
+    line-height: 1.1;
+    color: #932222;
+}
+.products_heading p{
+    width: 100%;
+    max-width: 10em;
+    text-align: center;
+    margin: 0.5em auto 0 auto;
+    font-size: 1.3rem;
+    line-height: 1.1;
+    color: #796F6F;
+}
+.products_catagory{
+    margin-top: 1em;
+    width: 100%;
+    
+}
+.catag{
+    position: relative;
+    width: 12em;
+}
+.catag::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+}
+.catag:hover::before{
+    content: '';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.5;
+    font-size: 1.5rem;
+    color: #000;
+}
+.catagory1:hover::before{
+    content: 'cricket';
+}
+.catagory2:hover::before{
+    content: 'batmintan';
+}
+.catagory3:hover::before{
+    content: 'baseball';
+}
+.catagory4:hover::before{
+    content: 'baseball';
+}
+.catagory5:hover::before{
+    content: 'baseball';
+}
+
+.catagory_row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.product_img
+{
+ width: 100%;
+}
+.product_img img{
+    width: 100%;
+}
+footer{
+    padding: 1em;
+    background-color: #F2F2F2;
+}
+.footer_information{
+    width: 100%;
+    text-align: center;
+    
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.one{
+    width: 100%;
+    max-width: 24em;
+}
+.two{
+    width: 100%;
+    max-width: 18.5em;
+}
+.one::before{
+    display: block;
+    content: '';
+    width: 100%;
+    height: 0.2em;
+    background-color: blueviolet;
+}
+.one::after{
+    display: block;
+    content: '';
+    width: 100%;
+    height: 0.2em;
+    background-color: blueviolet;
+}
+.one ul{
+    list-style-type: none;
+}
+.one li{
+    font-size: 1.5rem;
+    opacity: 0.7;
+    color: cornflowerblue;
+}
+.one li + li {
+    margin-left: 4em;
+   
+}
+.footer_information h2{
+  text-transform: capitalize;
+  color: #000;
+  width: 100%;
+}
+.two::before{
+    display: block;
+    content: '';
+    width: 100%;
+    height: 0.2em;
+    background-color: blueviolet;
+}
+.two::after{
+    display: block;
+    content: '';
+    width: 100%;
+    height: 0.2em;
+    background-color: blueviolet;
+}
+.two ul{
+    list-style-type: none;
+}
+.two li{
+    font-size: 1.5rem;
+    opacity: 0.7;
+    color: cornflowerblue;
+}
+.two li + li {
+    margin-left: 3em;
+   
+}
+.social_links{
+    margin-top: 1em;
+}
+.social_links ul{
+    list-style-type: none;
+}
+.social_links li + li{
+ margin-left: 2em;
+}
+.social_links img{
+    width: 3em;
+}
+.copyright{
+    margin-top: 1em;
+    text-align: center;
+    opacity: 0.7;
+}
+@media (min-width:700px){
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .container{
+        width: 100%;
+        max-width: 80em;
+        margin: 0 auto;
+    }
+    .hambarger{
+      display: none;
+    }
+    .nav_row{
+        display: flex;
+    }
+    .style{
+        width: 50%;
+    }
+    .nav{
+        display: block;
+        width: 50%;
+    }
+    .nav ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav  li + li{
+        margin-left: 3em;
+    }
+    .nav a{
+        font-size: 1.4rem;
+    }
+    #search{
+        padding: 2em;
+    }
+    .search_box{
+        width: 19rem;
+    }
+    .products_heading  h1{
+        max-width: 13em;
+        margin: 0 auto;
+        letter-spacing: 0.1em;
+        font-size: 3rem;
+    }
+    .products_heading  p{
+        max-width: 10em;
+        letter-spacing: 0.1em;
+    }
+    .catag {
+        width: 20em;
+        margin-left: 2em;
+        margin-top: 1em;
+    }
+    footer{
+        opacity: 0.9;
+    }
+    .one{
+        margin-top: 1em;
+        max-width: 60em;
+    }
+    .one ul{
+        justify-content: space-evenly;
+    }
+    .one li{
+        font-size: 2rem;
+        text-transform: capitalize;
+    }
+    .two{
+        margin-top: 1em;
+        max-width: 40em;
+    }
+    .two ul{
+        justify-content: space-evenly;
+    }
+    footer h2{
+        margin:0 auto;
+        font-size: 1.4rem;
+    }
+    .social_links{
+        max-width: 30em;
+        margin: 1em auto 0 auto;
+    }
+}

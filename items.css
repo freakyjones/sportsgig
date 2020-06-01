@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&family=Salsa&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Roboto","sans-serif";
+
+}
+header{
+    padding: 1em;
+    background: rgba(45, 49, 125, 0.6);
+}
+.logo{
+    display: flex;
+    justify-content: space-between;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.nav_links{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+}
+.nav_links a{
+   text-decoration: none;
+   color: #FFF8F8;
+   font-family: 'Oswald', sans-serif;
+   letter-spacing: 0.02em;
+   font-size: 1.4rem;
+   font-weight: 100;
+}
+.nav_links li+li{
+ margin-top: 0.8em;
+}
+.toggle{
+    display:flex;
+    transition: all 0.5s ease-in-out;
+}
+#heading{
+    background: linear-gradient(94.11deg, #141C60 0%, rgba(35, 8, 8, 0.72) 100%);
+    padding: 1em;
+}
+.heading_text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.heading_text h1{
+    font-size: 2rem;
+    letter-spacing: 0.08em;
+}
+span{
+    font-weight: 900;
+    color: #fff;
+}
+#products{
+    background: #EA7878;
+    padding: 1em;
+}
+.items{
+    
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.item{
+    background-color:#fff;
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+}
+.item_img{
+    width: 10em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img_container{
+    width: 8em;
+    border:1px solid black;
+    padding: 1em;
+    margin-top: 0.5em;
+}
+.img_container img{
+    width: 100%;
+}
+.item_name{
+    text-align: center;
+  
+}
+.item_name p{
+    font-size: 1rem;
+    font-style: italic;
+    text-transform: capitalize;
+}
+.item_name ::after{
+   content: "";
+   width: 5em;
+   height: 1px;
+   display: block;
+   background-color: black;
+   margin-left: 2.5em;
+}
+.item_footer{
+    margin-top: 0.5em;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1em 0;
+}
+.item_footer p{
+    text-transform: capitalize;
+    font-size: 1.3rem;
+    color: #fff;
+}
+.item_footer img{
+    width: 2em;
+}
+footer{
+    background: #F2F2F2;
+}
+.footer_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.footer_left{
+    display: flex;
+    justify-content: space-around;
+    padding: 0.5em;
+}
+.footer_right{
+    display: flex;
+    justify-content: space-around;
+    padding: 0.5em;
+}
+.footer_content h2{
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+footer p{
+    font-size: 1.3rem;
+    color:blue;
+}
+
+footer p+p{
+    margin-left: 1em;
+}
+.social_media{
+    text-align: center;
+    padding: 0.5em;
+}
+.social_media img{
+    width: 2em;
+}
+@media (min-width:700px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container{
+        width: 100%;
+        max-width: 80em;
+        margin: 0 auto;
+    }
+    header{
+        padding: 2em;
+    }
+    .row{
+        display: flex;
+    }
+    .column{
+        display: flex;
+        flex-direction: column;
+    }
+    .logo img{
+        width: 10em;
+        margin-left: 3em;
+    }
+    .sandwich{
+        display: none;
+    }
+    .nav{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .nav_links{
+        display: flex;
+        flex-direction: row;
+        margin-right: 3em;
+    }
+    .nav_links li+li{
+        margin-left: 1em;
+        margin-top: 0;
+    }
+    #heading{
+        height: 15vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .items{
+        justify-content: start;
+    }
+    .item{
+        margin:1em 3em;
+    }
+    
+    .footer_content{
+        flex-direction: row;
+        justify-content: center;
+        padding: 1em;
+    }
+    
+    .social_media{
+        padding: 1em;
+    }
+}

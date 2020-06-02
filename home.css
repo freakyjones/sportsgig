@@ -377,3 +377,59 @@ footer{
 .footer_social img+img{
     margin-left: 0.5em;
 }   
+@media (min-width:700px){
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    .container{
+        width: 100%;
+        max-width: 80em;
+        margin: 0 auto;
+    } 
+    .sandwitch_btn{
+        display: none;
+    }
+    .nav{
+        display: flex;
+        justify-content: space-around;
+    }
+    .nav_links{
+        display: flex;
+        align-items: center;
+    }
+   
+    .nav_links li{
+        margin: 1em;
+    }
+    .main_hero{
+        display: flex;
+        min-height: 60vh;
+        justify-content: center;
+        align-items: center;
+    }
+    .card{
+        max-width: 40em;
+    }
+    .footer_content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    .footer_content_right::after{
+        content: '';
+        display: block;
+        position: absolute;
+        top: 3em;
+        left:20em;
+        width: 38em;
+        height: 0.2em;
+        background-color: #0601FF;
+    }
+    .text_content + .text_content{
+        margin: 0.5em 2em;
+    }
+    
+}

@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Oswald","sans-serif";
+}
+header{
+    background: rgba(45, 49, 125, 0.6);
+    padding: 1em;
+}
+.row{
+    display: flex;
+}
+.logos{
+    justify-content: space-between;
+}
+.nav_links{
+    text-align: center;
+    display: none;
+}
+ul{
+    list-style-type: none;
+}
+.nav_links li+li{
+    margin-top: 1em;
+}
+.nav_links a{
+    text-decoration: none;
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    color: #fff;
+    letter-spacing: 1px;
+}
+.nav_links a:hover{
+    color: darkred;
+}
+.toggle{
+    display: block;
+}
+#heading{
+    padding: 1em;
+    background-color: #FBD3D3;
+}
+.main_heading{
+    text-align: center;
+    
+}
+.main_heading h1{
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    color: #785252;;
+}
+main{
+    padding: 1em;
+    background:#000;
+}
+.main p{
+    color: #fff;
+    font-family: "Roboto","sans-serif";
+    line-height: 1.5;
+    font-weight: 100;
+    word-spacing: 2px;
+    text-align: center;
+    font-size: 1rem;
+    opacity: 0.8;
+}
+#team{
+    padding: 1em;
+    background-color: #B51616;
+}
+#team h2{
+    text-align: center;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+    color: darksalmon;
+    text-transform: capitalize;
+}
+.teammates{
+    margin-top: 1em;
+}
+.player{
+    
+    text-align: center;
+}
+.player img{
+    width: 10em;
+}
+footer{
+    padding: 1em;
+    background-color: rgba(45, 49, 125, 0.6);;
+}
+.content{
+    text-align: center;
+}
+.content_text p{
+    font-size: 1.3rem;
+    color: blue;
+}
+.content_text_right{
+    justify-content: center;
+}
+.content_text_right p+p{
+    margin-left: 1em;
+}
+.content_text_left{
+   justify-content: center;
+}
+.content_text_left p+p{
+    margin-left: 1em;
+}    
+.content_text_middle h2{
+   text-transform: capitalize;
+   letter-spacing: 1px;
+   font-size: 2rem;
+}
+.social_media{
+    margin: 1em;
+}
+.social_media img+img{
+    margin-left: 1em;
+}
+.social_media img{
+    width: 3em;
+}
+@media (min-width:700px){
+    .container{
+        width: 100%;
+        max-width: 70em;
+        margin: 0 auto;
+    }
+    .sandwitch_btn{
+        display: none;
+    }
+    .nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nav_links{
+        display: block;
+    }
+    .nav_links ul{
+        display: flex;
+    }
+    .nav_links li{
+        margin: 1em;
+    }
+    .main p{
+        text-align: left;
+    }
+    .content_text{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-align: start;
+        width: 100%;
+        max-width: 40em;
+        margin: 0 auto;
+        position: relative;
+    }
+    .content_text_right{
+       width: 30%;
+        
+    }
+    .content_text_left{
+        width: 30%;
+    }
+    .content_text_middle{
+        text-align: center;
+        width: 30%;
+    }
+    .content_text::after{
+        content:"";
+        position: absolute;
+        background: blue;
+        display: block;
+        width: 50em;
+        height:3px;
+        top: 3em;
+        left: -5em; 
+    }
+}
